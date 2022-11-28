@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> responsive design </title>
+        <style>
+        .grid {
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            column-gap: 20px;
+        }
+        @media only screen and (max-width:1200px) {
+            .grid {
+                display:grid;
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+        @media only screen and (max-width:992px) {
+            .grid {
+                display:grid;
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media only screen and (max-width:768px) {
+            .grid {
+                display:grid;
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    </head>
+    <body>
+        <div class="grid">
+            <div class="div1"><img src="christmas1.jpeg" height="250px"></div>
+            <div class="div2"><img src="santa.jpeg" height="250px"></div>
+            <div class="div3"><img src="christmas2.webp" height="250px"></div>
+            <div class="div3"><img src="deer.webp" height="250px"></div>
+        </div>
+    </body>
+</html>
